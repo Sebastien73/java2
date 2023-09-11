@@ -1,5 +1,5 @@
 package demenagementPack;
-
+import java.util.Scanner;
 public class Demenagement {
     // attributs
     private String factory;
@@ -9,8 +9,20 @@ public class Demenagement {
     }
     public void doWork(){
         int noTravel = 0;
-        int totalBox = 34;
-        int capTruck = 9;
+        int totalBox = 0;
+        int capTruck = 0;
+
+        Scanner clavier = new Scanner(System.in);
+
+
+        System.out.print("Capacity of truk  ? : ");
+        capTruck = clavier.nextInt();
+
+        System.out.print("How much box ? : ");
+        totalBox = clavier.nextInt();
+
+        clavier.close();
+
         int emport = capTruck;
 
         System.out.println("Start travel");
