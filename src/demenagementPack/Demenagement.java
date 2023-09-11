@@ -1,4 +1,5 @@
 package demenagementPack;
+
 import java.util.Scanner;
 public class Demenagement {
     // attributs
